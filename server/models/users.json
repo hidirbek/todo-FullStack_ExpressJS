@@ -1,0 +1,20 @@
+[
+    {
+        "id": "a5381883-a5bc-43af-b6fa-f076a89ba735",
+        "username": "Axror",
+        "email": "axror777@gmail.com",
+        "password": "$2a$12$VRNHVQza2XyaN5XIdLOxQOKkPKqpdXtqj.TY4Jw2UuCAthatk0CLa"
+    },
+    {
+        "id": "fa3718be-3be2-48bc-b4a4-958cbdb357ad",
+        "username": "Kimdir",
+        "email": "mendir777@gmail.com",
+        "password": "$2a$12$tH99C8qprE08WCoYCyJyPuKj774P/Kw4MRodrLY3aTZ93X4heFGV."
+    },
+    {
+        "id": "8d60dfcd-9ff7-4f5b-abfd-737785d51e43",
+        "username": "Sendir",
+        "email": "sendir777@gmail.com",
+        "password": "$2a$12$cGuUGkiYoAuYSY/s8xTa0eoCH1iYCFEwNaraT6ZLcrPqde9kdCb3K"
+    }
+]
