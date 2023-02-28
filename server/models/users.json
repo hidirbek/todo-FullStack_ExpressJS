@@ -16,5 +16,11 @@
         "username": "Sendir",
         "email": "sendir777@gmail.com",
         "password": "$2a$12$cGuUGkiYoAuYSY/s8xTa0eoCH1iYCFEwNaraT6ZLcrPqde9kdCb3K"
+    },
+    {
+        "id": "728ee77c-59c7-458f-8b48-33d9ca8530fb",
+        "username": "bekzod",
+        "email": "bekzod@gmail.com",
+        "password": "$2a$12$FKVRnn29piiAsiVDV8EKKunv6oGQx3sU/KchrMKXcb5dkKA/UnIpm"
     }
 ]

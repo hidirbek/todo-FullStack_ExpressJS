@@ -10,9 +10,27 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Login() {
+  const register = (e) => {
+    e.preventDefault();
+
+    let { name, username, email, password } = e.target;
+    let new_user = {
+      name: name.value,
+      username: username.value,
+      email: email.value,
+      password: password.value,
+    };
+
+    fetch("http://localhost:4000/register", {
+      method: "POST",
+      body: JSON.stringify(new_user),
+    })
+      .then((res) => res.json())
+      .then((data) => alert(data.msg));
+  };
+
   const [justifyActive, setJustifyActive] = useState("tab1");
 
   const handleJustifyClick = (value) => {
@@ -82,7 +100,14 @@ function Login() {
             type="password"
           />
 
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+          <MDBBtn
+            onClick={(e) => {
+              register(e);
+            }}
+            className="mb-4 w-100"
+          >
+            Sign up
+          </MDBBtn>
         </MDBTabsPane>
       </MDBTabsContent>
     </MDBContainer>

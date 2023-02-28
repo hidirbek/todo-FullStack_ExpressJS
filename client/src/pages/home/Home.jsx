@@ -29,39 +29,36 @@ const Home = () => {
       .then((todo) => setTodos(todo));
   }, [update]);
 
-  // const checkboxChanged = (e)=> {
-  //   // const [check, setCheck] = useState(false)
-  //   console.log(e.target);
-  // }
-
   return (
-    <div className="container">
-      <form className="site-form" onSubmit={(e) => createTodo(e)}>
-        <input
-          required
-          name="title"
-          className="input"
-          type="text"
-          placeholder="New task..."
-        />
-      </form>
-      <div className="task-category">
-        <p className="category-links">All</p>
-        <p className="category-links">Active</p>
-        <p className="category-links">Completed</p>
-      </div>
-      <div className="task-wrapper">
-        {todos.map((el) => {
-          return (
-            <div key={el.id} className="tasks">
-              <input
-                /*onChange={(e)=>checkboxChanged(e)} checked={el.checked} */ className="checkbox"
-                type="checkbox"
-              />
-              <p className="todo-title">{el.title}</p>
-            </div>
-          );
-        })}
+    <div className="main-container">
+      <div className="container-home">
+        <form className="site-form" onSubmit={(e) => createTodo(e)}>
+          <input
+            required
+            name="title"
+            className="input"
+            type="text"
+            placeholder="New task..."
+          />
+        </form>
+        <div className="task-category">
+          <p className="category-links">All</p>
+          <p className="category-links">Active</p>
+          <p className="category-links">Completed</p>
+        </div>
+        <div className="task-wrapper">
+          {todos.map((el) => {
+            return (
+              <div key={el.id} className="tasks">
+                <input
+                  /*onChange={(e)=>checkboxChanged(e)} checked={el.checked} */ className="checkbox"
+                  type="checkbox"
+                />
+                <p className="todo-title">{el.title}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
